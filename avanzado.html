@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>
+      Busqueda google
+    </title>
+    <meta charset="UTF-8">
+  </head>
+
+  <body>
+    <section class="navegacion">
+      <nav>
+        <a href="./imagenes.html">Google Imagenes</a>
+        <a href="./index.html">Google</a>
+      </nav>
+    </section>
+    <img src="logo.png" alt="google" width="10%" height="5%">
+    <br>
+    <label style="margin-left:10px">Búsqueda avanzada</label>
+    <hr>
+    <form action="https://www.google.com/search">
+      <table>
+        <tr>
+          <td>Todas estas palabras</td> 
+          <td><input type ="text" name="as_q"></td>
+          <td>Ingresa las palabras importantes: Terrier ratonero tricolor.</td>
+        </tr>
+        <tr>
+            <td>Esta palabra o frase exacta:</td> 
+            <td><input type ="text" name="as_epq"></td>
+            <td>Ingresa las palabras exactas terrier ratonero</td>
+        </tr>
+        <tr>
+            <td>Todas estas palabras</td> 
+            <td><input type ="text" name="as_eq"></td>
+            <td>Ingresa un signo menos justo delante de las pabras que no deseas que aparezcan: -Roedor, -"Jack Russell".</td>
+        </tr>
+      </table>
+      <input type = "submit" value="busqueda avanzada">
+    </form>
+  </body>
+</html>
