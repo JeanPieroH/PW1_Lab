@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -5,6 +6,9 @@
       Busqueda google
     </title>
     <meta charset="UTF-8">
+    <style type='text/css'>
+      @import 'style.css';
+      </style>
   </head>
 
   <body>
@@ -14,29 +18,33 @@
         <a href="./index.html">Google</a>
       </nav>
     </section>
-    <img src="logo.png" alt="google" width="10%" height="5%">
-    <br>
-    <label style="margin-left:10px">Búsqueda avanzada</label>
-    <hr>
-    <form action="https://www.google.com/search">
-      <table>
+    <div class="header"></div>
+    <div  class="header">
+      <img   src="logo.png" alt="google" width="272" height="92">
+
+    </div>
+
+    <div class="cajabuscar">
+    <form method=GET  id="buscarform"  action="https://www.google.com/search">
+       
+      <ol>
         <tr>
-          <td>Todas estas palabras</td> 
-          <td><input type ="text" name="as_q"></td>
-          <td>Ingresa las palabras importantes: Terrier ratonero tricolor.</td>
+          <p>Todas estas palabras</p> 
+          <td><input type="search" id="s" value="" placeholder="Ingresa las palabras importantes: Terrier ratonero tricolor."  name="as_q"></td>
         </tr>
         <tr>
-            <td>Esta palabra o frase exacta:</td> 
-            <td><input type ="text" name="as_epq"></td>
-            <td>Ingresa las palabras exactas terrier ratonero</td>
+            <p>Esta palabra o frase exacta:</p> 
+            <td><input type="search" id="s" value="" placeholder="Ingresa las palabras exactas terrier ratonero"  name="as_epq"></td>
         </tr>
         <tr>
-            <td>Todas estas palabras</td> 
-            <td><input type ="text" name="as_eq"></td>
-            <td>Ingresa un signo menos justo delante de las pabras que no deseas que aparezcan: -Roedor, -"Jack Russell".</td>
+            <p>Todas estas palabras</p> 
+            <td><input type="search" id="s" value="" placeholder="Ingresa un signo menos justo delante de las pabras que no deseas que aparezcan: -Roedor, -"Jack Russell""   name="as_eq"></td>
         </tr>
-      </table>
-      <input type = "submit" value="busqueda avanzada">
+      </ol>
+      <input  id="Button2"  value="Buscar con Google" aria-label="busqueda avanzada" name="btnK" type="submit">
     </form>
+  </div>
+
+
   </body>
 </html>
