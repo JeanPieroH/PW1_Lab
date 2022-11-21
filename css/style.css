@@ -1,27 +1,59 @@
-body {
-    background: #f8f8f8;
-    text-align: right;
- }
+*{
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+h6,a,p{
+    text-align: center;
+    font-family: italic,sans-serif;
 
-body, div, fieldset{
-     margin: 0;
-     padding: 0;
-     border: 0;
-     font-size: 100%;
-     font: inherit;
- }
+}
+ .navegacion{
+    background-color:#920101;
+    display: flex;
+    justify-content: left;
+}
+.navegacion a{
+    transition: all 0.8s ease;
+    color:white;
+    font-weight: bold;
+    float: left;    
+    display: block;
+    text-align: center;
+    padding: 20px 40px;
+    text-decoration: none;
+}
+.navegacion a:hover {
+    background-color:#f1f5ff;
+    color: white;
+}
+
+.header{
+    min-height: 150px;
+    max-height: 290px;
+    height: calc(100% - 560px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin-top: auto;
+    flex-shrink: 0;
+    box-sizing: border-box;
+
+}
 
 
  .cajabuscar {
-     float: none;
-     width: 100%;
-     max-width: 453px;
-     margin-bottom: 25px;
-     margin-top: 29px;
-     margin-left: auto;
-     margin-right: auto;
-     display: inline-block;
-     text-align: left;
+    display: flex;
+    z-index: 3;
+    height: 44px;
+    background: #fff;
+    border: 1px solid #ffffff;
+    box-shadow: none;
+    border-radius: 24px;
+    margin: 0 auto;
+    width: auto;
+    max-width: 584px;
+     
  }
 
  #buscarform {
@@ -46,38 +78,80 @@ body, div, fieldset{
      width: 24px;
      text-align: center;
  }
-
+ #buscarform .submit {
+    font-size: 20px;
+    top: 0px;
+    color: #FFF;
+    background: #a52606;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 9px;
+    height: 24px;
+    width: 24px;
+    text-align: center;
+}
  
  #buscarform fieldset { width: 100% }
 
  #s {
      width: 100%;
      background-color: #fff;
-     float: left;
+     float: center;
      padding: 8px 0;
-     text-indent: 10px;
      color: #555555;
-     border: 1px solid #fff; 
+     border: 1px solid rgb(219, 216, 216); 
+     border-radius: 24px;
      box-sizing: border-box;
      height: 42px;
- }
+     background: url(https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-19-32.png) no-repeat 3px 8px;
+     background-size: 24px;
 
- .button{
-     right: 0;
-     top: 0;
-     padding: 9px 0;
-     float: right;
-     border: 0;
-     width: 42px;
-     height: 42px;
-     cursor: pointer;
-     text-align: center;
-     padding-top: 10px;
-     color: #868080;
-     transition: all 0.25s linear;
-     background: transparent;
-     z-index: 10;
-     position: absolute;
-     border: 0;
-     vertical-align: top;
+    border-bottom: solid 1px #ccc;
+    padding: 10px 10px 10px 30px;
+    outline: none;
  }
+ #Button {
+
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    font-size: 14px;
+    position: absolute;
+    top: 100%;
+    left: 35%;
+    
+}
+#Button2 {
+
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    font-size: 14px;
+    position: absolute;
+    top: 700%;
+    left: 40%;
+    
+}
