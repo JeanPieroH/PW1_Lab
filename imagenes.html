@@ -5,20 +5,32 @@
       Busqueda google
     </title>
     <meta charset="UTF-8">
+    <style type='text/css'>
+      @import 'style.css';
+      </style>
   </head>
 
   <body>
     <section class="navegacion">
       <nav>
         <a href="./index.html">Google</a>
-        <a href="./avanzado.html">Google Avanzado</a>
+        <a href="./avanzado.html">Google Avanzado </a>
       </nav>
     </section>
-    <img src="logo.png" alt="google" width="272" height="92">
-    <p>Imagenes</p>
-    <form action="https://www.google.com/images">
-      <input type="text" name="q">
-      <input type = "submit" value="buscar con Google">
+
+    <div class="header"></div>
+    <div  class="header">
+      <img   src="logo.png" alt="google" width="272" height="92">
+
+    </div>
+    <div class="cajabuscar">
+
+    <form method=GET  id="buscarform" action="https://www.google.com/images">
+
+      <input type="search" id="s" value="" placeholder="Buscar Imagenes"  name="q" />
+      <input id="Button"  value="Buscar con Google" aria-label="Buscar con Google" name="btnK" type="submit" >
     </form>
+  </div>
+
   </body>
 </html>
